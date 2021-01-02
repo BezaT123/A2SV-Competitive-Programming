@@ -7,8 +7,7 @@ def countingValleys(steps, path):
             level-=1
         else:
             level+=1
-        if level == 0:
-            if was_in_valley:
+        if level == 0 and was_in_valley:
                 num_valleys+=1
                 was_in_valley=False
         if level<0:
