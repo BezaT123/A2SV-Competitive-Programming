@@ -13,10 +13,7 @@ class Solution:
             return None
         if len(nums) == 1:
             return TreeNode(nums[0])
-        # if type(nums) != type([]):
-        #     return nums
         max_indx = 0
-        # print(nums)
         for i in range(1,len(nums)):
             if nums[max_indx] < nums[i]:
                 max_indx = i
